@@ -1,6 +1,8 @@
 public class Program {
     public static void main (String[] args) {
-        LetterGrader lg = new LetterGrader();
-        lg.grade();
+//     Commented out for development   LetterGrader lg = new LetterGrader();
+//        lg.grade();
+        GradeAverager ga = new GradeAverager();
+        ga.gatherGrades();
     }
 }
