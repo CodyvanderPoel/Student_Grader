@@ -20,7 +20,6 @@ public class LetterGrader {
         return input;
     }
     public String letterGrade (Integer numGrade) {
-        System.out.println(numGrade);
         var g = numGrade;
         if (g < 64) {
             return "F";
