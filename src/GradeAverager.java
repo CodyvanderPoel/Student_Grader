@@ -11,14 +11,14 @@ public class GradeAverager {
 
 
     public void gradeScoring() {
-        String grades = grader.letterGrade(gradeAverage);
-        if (grades == "F") {
-            System.out.println("Uhhhh you failed big dog :-(");
+        String letterGrade = grader.letterGrade(gradeAverage);
+        if (letterGrade == "F") {
+            System.out.println("Uhhhh you failed big dawg :-(");
         }
         else {
             System.out.println("You passed homie!");
         }
-        System.out.println(grades);
+        System.out.printf("Grade: %d || Letter Grade: %s", gradeAverage, letterGrade);
     }
 
 
