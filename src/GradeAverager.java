@@ -5,6 +5,7 @@ public class GradeAverager {
     LetterGrader grader = new LetterGrader();
 
     public int gradeAverage;
+    public String name;
     public Integer total;
     public ArrayList<Integer> grades = new ArrayList();
     private Scanner user = new Scanner(System.in);
@@ -13,8 +14,8 @@ public class GradeAverager {
 
     public void gradeScoring() {
         String letterGrade = grader.letterGrade(gradeAverage);
-        System.out.printf("Grade: %d || Letter Grade: %s", gradeAverage, letterGrade);
-        gb.saveGrades(grades, gradeAverage, letterGrade);
+        System.out.printf("Average: %d || Letter Grade: %s", gradeAverage, letterGrade);
+        gb.saveGrades(grades, gradeAverage, letterGrade, name);
     }
 
 
@@ -22,14 +23,15 @@ public class GradeAverager {
         total = 0;
         var statement = true;
         var exp = "[0-9]+";
-        System.out.println("Enter END to average the numbers.\nEnter CLOSE to exit the application" );
+        System.out.println("Enter Student Name:");
+        name = user.nextLine();
+        System.out.println("Enter a grade and then press the enter key to insert the number.\nEnter END to average the numbers.\nEnter CLOSE to exit the application" );
         while (statement) {
             System.out.println("Grade: ");
             String input = user.nextLine();
             if (input.equals("END")){
                 try {
                 gradeAverage = total / grades.size();
-                System.out.println("Average: " + gradeAverage);
                 gradeScoring();
                 statement = false;} catch (ArithmeticException ex){
 //              Commented for development  ex.printStackTrace();
