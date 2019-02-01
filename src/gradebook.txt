@@ -1,12 +1,8 @@
-This file contains all of the grades.
+//This file contains all of the grades.
 
 
-2019.02.01.09.33
+Brock
+2019/02/01 | 11:11 AM
 Grades: 
-[100, 99, 78, 83, 37]
-Average: 79 || Letter Grade: C
-
-2019.02.01.09.34
-Grades: 
-[100, 90, 99, 89, 95]
-Average: 94 || Letter Grade: A
+[100, 99, 100, 100, 99]
+Average: 99 || Letter Grade: A
