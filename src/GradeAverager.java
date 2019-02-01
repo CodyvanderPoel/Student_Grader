@@ -8,6 +8,7 @@ public class GradeAverager {
     public Integer total;
     public ArrayList<Integer> grades = new ArrayList();
     private Scanner user = new Scanner(System.in);
+    private GradeBook gb = new GradeBook();
 
 
     public void gradeScoring() {
@@ -19,6 +20,7 @@ public class GradeAverager {
             System.out.println("You passed homie!");
         }
         System.out.printf("Grade: %d || Letter Grade: %s", gradeAverage, letterGrade);
+        gb.saveGrades(grades, gradeAverage, letterGrade);
     }
 
 
