@@ -1,1 +1,12 @@
-This is just a text file that keeps up with grades.
+This file contains all of the grades.
+
+
+2019.02.01.09.33
+Grades: 
+[100, 99, 78, 83, 37]
+Average: 79 || Letter Grade: C
+
+2019.02.01.09.34
+Grades: 
+[100, 90, 99, 89, 95]
+Average: 94 || Letter Grade: A
